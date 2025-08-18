@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Kalam -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <title>Keeret Mahi</title>
+</head>
+<body>
+     <div class="stars" aria-hidden="true"></div>
+    
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Keeret Mahi</a></div>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact</a></li>
+                <button class="resume-btn"><a href="#">Resume</a></button>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="location">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <h4>Toronto, Canada</h4>
+        </div>
+
+
+        <h1 id="hero-title"></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis dolores eos aspernatur omnis explicabo incidunt error harum autem! Vitae odit</p>
+
+        <div class="buttons">
+
+            <button class="experience-btn">
+                 View Projects
+            </button>
+
+            <button class="resume-btn2">
+                <i class="fa-solid fa-download"></i> Resume
+            </button>
+        </div>
+
+        <div class="icons">
+            <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/yourusername" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:keeretmahi@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="scroll-down">
+            <i class="fa-solid fa-long-arrow-down"></i>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus id ex, nesciunt explicabo accusamus ut architecto ad iure nulla minima aut! Illum, totam ipsum! Magnam animi doloremque accusantium aliquid minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo laboriosam rerum modi veritatis, hic assumenda omnis illum, eveniet, voluptates laudantium voluptatum quasi animi earum nulla. Suscipit maxime a eius? <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloribus consequatur nulla commodi saepe eius corrupti suscipit laborum dignissimos eaque fugiat deserunt reprehenderit mollitia vero ipsa deleniti, magnam dicta quisquam.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2>Education</h2>
+
+        <div class="timeline">
+            <!-- Waterloo -->
+            <div class="tl-item">
+            <div class="tl-dot"></div>
+            <article class="tl-card">
+                <img class="tl-logo" src="images/uw-logo.png" alt="" />
+                <div>
+                <h3>University of Waterloo</h3>
+                <p class="meta">Bachelor's in Computer Science • Expected May 2029</p>
+                </div>
+            </article>
+            </div>
+
+            <!-- Laurier -->
+            <div class="tl-item">
+            <div class="tl-dot"></div>
+            <article class="tl-card">
+                <img class="tl-logo" src="images/laurier-logo.png" alt="" />
+                <div>
+                <h3>Wilfrid Laurier University</h3>
+                <p class="meta">Bachelor's in Business Administration • Expected May 2029</p>
+                <p class="hs-honours">
+                    • President's Gold Entrance Scholarship<br>
+                    • BU111 Live Case Semi-Finalist <br>
+                </p>
+                </div>
+            </article>
+            </div>
+
+            <!-- Castlebrooke -->
+            <div class="tl-item">
+            <div class="tl-dot"></div>
+            <article class="tl-card">
+                <img class="tl-logo" src="images/cb-logo.png" alt="" />
+                <div>
+                <h3>Castlebrooke Secondary School</h3>
+                <p class="meta">Graduated with Honors • June 2024</p>
+                <p class="hs-honours">
+                    • Class of 2024 Valedictorian <br>
+                    • CFO of DECA Chapter <br>
+                    • President of Athletic Council <br>
+                    • Treasurer of Charity Council <br>
+                    • Top 15 DECA Provincial Exam/Overall Score in TTDM Event<br>
+                </p>
+                </div>
+            </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill-items">
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Flask</li>
+                <li>Racket</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="project">
+                <h2>Projects</h2>
+
+                <div class="projects-grid">
+                    <!-- Card 1 -->
+                    <article class="project-card">
+                    <a href="#" class="card-link">
+                        <div class="thumb">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop"
+                            alt="Screenshot of a minimalist portfolio website" />
+                        </div>
+                        <div class="meta">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A personal portfolio website to showcase my projects and skills.</p>
+                        </div>
+                    </a>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="project-card">
+                    <a href="#" class="card-link">
+                        <div class="thumb">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop"
+                            alt="Clean product photo representing an e-commerce platform" />
+                        </div>
+                        <div class="meta">
+                        <h3>E-commerce Platform</h3>
+                        <p>An e-commerce platform with user authentication, product management, and payment integration.</p>
+                        </div>
+                    </a>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="project-card">
+                    <a href="#" class="card-link">
+                        <div class="thumb">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop"
+                            alt="Charts and graphs representing a data analysis project" />
+                        </div>
+                        <div class="meta">
+                        <h3>Data Analysis Project</h3>
+                        <p>A data analysis project using Python to analyze and visualize data from a public dataset.</p>
+                        </div>
+                    </a>
+                    </article>
+                </div>
+        </div>
+    </section>
+
+    <button class="photo-btn">View Photo Gallery</button>
+
+    <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-card">
+            <form action="#" method="post" class="contact-form" novalidate>
+            <div class="field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" placeholder="John Doe" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="icons">
+            <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/yourusername" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:keeretmahi@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+        <h3>2025 @ Keeret Mahi</h3>
+    </footer>
+
+    </main>
+
+
+     <script src="stars.js"></script>
+</body>
+</html>
