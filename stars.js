@@ -2,18 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('.stars');
   if (!container) return;
 
-  // Create and mount a canvas inside .stars
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d');
   container.appendChild(canvas);
 
-  // Config: tweak to taste
-  const STAR_COUNT = 140;        // density
-  const SPEED_MIN = 8;           // px/sec (slow)
-  const SPEED_MAX = 22;          // px/sec (slow-ish)
-  const SIZE_MIN  = 0.8;         // px radius
+  const STAR_COUNT = 140;       
+  const SPEED_MIN = 8;           
+  const SPEED_MAX = 22;         
+  const SIZE_MIN  = 0.8;         
   const SIZE_MAX  = 2.2;
-  const TWINKLE   = true;        // subtle brightness pulsing
+  const TWINKLE   = true;        
 
   let dpr = Math.max(1, window.devicePixelRatio || 1);
   let width = 0, height = 0;
@@ -22,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const rand = (a, b) => Math.random() * (b - a) + a;
 
   function resize() {
-    // Fit canvas to viewport with device pixel ratio
+    
     width  = container.clientWidth;
     height = container.clientHeight;
     canvas.width  = Math.floor(width * dpr);
@@ -37,18 +35,18 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < STAR_COUNT; i++) {
       stars.push({
         x: rand(0, width),
-        y: rand(0, height),        // uniform distribution on load
+        y: rand(0, height),        
         r: rand(SIZE_MIN, SIZE_MAX),
-        v: rand(SPEED_MIN, SPEED_MAX),  // vertical speed (px/sec)
-        phase: rand(0, Math.PI * 2),    // for twinkle
-        flicker: rand(0.15, 0.5)        // twinkle amplitude
+        v: rand(SPEED_MIN, SPEED_MAX),  
+        phase: rand(0, Math.PI * 2),   
+        flicker: rand(0.15, 0.5)       
       });
     }
   }
 
   let last = performance.now();
   function tick(now) {
-    const dt = (now - last) / 1000; // seconds since last frame
+    const dt = (now - last) / 1000; 
     last = now;
 
     ctx.clearRect(0, 0, width, height);
@@ -106,9 +104,22 @@ document.addEventListener("DOMContentLoaded", () => {
     if (i < text.length) {
       target.textContent += text.charAt(i);
       i++;
-      setTimeout(type, 320); 
+      setTimeout(type, 300); 
     }
   }
 
   type();
+});
+
+document.getElementById('download-resume').addEventListener('click', () => {
+  const a = document.createElement('a');
+  a.href = '/assets/Keeret Mahi.pdf';    
+  a.download = 'Keeret_Mahi_Resume.pdf';        
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+});
+
+document.getElementById("gallery-btn").addEventListener("click", () => {
+  window.location.href = "gallery.html"; // put your page name here
 });
