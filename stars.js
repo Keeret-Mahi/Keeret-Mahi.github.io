@@ -111,15 +111,17 @@ document.addEventListener("DOMContentLoaded", () => {
   type();
 });
 
-document.getElementById('download-resume').addEventListener('click', () => {
-  const a = document.createElement('a');
-  a.href = '/assets/Keeret Mahi.pdf';    
-  a.download = 'Keeret_Mahi_Resume.pdf';        
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
+document.querySelectorAll(".download-resume").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const a = document.createElement("a");
+    a.href = "/assets/Keeret Mahi.pdf";    
+    a.download = "Keeret_Mahi_Resume.pdf";        
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  });
 });
 
 document.getElementById("gallery-btn").addEventListener("click", () => {
-  window.location.href = "gallery.html"; // put your page name here
+  window.location.href = "gallery.html";
 });
