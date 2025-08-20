@@ -652,6 +652,15 @@ footer h3 {
 }
 
 @media (max-width: 640px) {
+  * {
+  box-sizing: border-box;
+  }
+
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+    
   body { height: auto; }
   img, video { max-width: 100%; height: auto; display: block; }
 
