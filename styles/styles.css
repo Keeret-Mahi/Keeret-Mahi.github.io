@@ -630,3 +630,162 @@ footer h3 {
     font-size: 14px;
     font-weight: 200;
 }
+
+/* ************ */
+/* MOBILE OVERRIDES */
+/* ************ */
+
+
+@media (max-width: 768px) {
+  .navdiv { 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    padding: 8px 0;
+  }
+  .navbar ul, .navbar li, .navdiv ul, .navdiv li { 
+    display: none !important;  
+  }
+  .logo a { margin-left: 0; font-size: 18px; }
+  .resume-btn { margin: 6px 0 0 0; width: auto; padding: 8px 14px; }
+}
+
+@media (max-width: 640px) {
+  body { height: auto; }
+  img, video { max-width: 100%; height: auto; display: block; }
+
+  .hero, .about, .education, .skills, .projects, .contact, footer { 
+    text-align: center; 
+  }
+
+  .hero { padding: 48px 16px; }
+  .location { margin: 24px auto 0; justify-content: center; }
+  .hero h1 { font-size: 36px; margin-top: 8px; }
+  .hero p { width: auto; margin: 10px auto 0; font-size: 16px; }
+  .icons, .scroll-down { text-align: center; }
+  .icons a { font-size: 24px; margin-right: 12px; }
+  .scroll-down { margin-top: 48px; }
+
+  /* Shared section box sizing/spacing */
+  .about, .education, .skills, .projects, .contact { 
+    max-width: 680px; 
+    padding: 32px 16px; 
+    margin: 40px auto; 
+  }
+
+  .timeline { margin: 0; padding: 0; }
+  .timeline::before, .tl-dot { display: none; }
+  .tl-card { margin: 0 auto 14px; padding: 14px; }
+  .tl-card h3 { font-size: 16px; }
+  .meta { font-size: 13px; }
+
+  .skills ul { 
+    margin: 0; padding: 0; 
+    display: flex; flex-wrap: wrap; 
+    justify-content: center; gap: 10px; 
+  }
+  .skills ul li { margin-right: 0; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card .meta { align-items: center; text-align: center; padding: 14px 14px 48px; }
+  .project-card .meta h3 { font-size: 18px; }
+  .project-icons { left: 50%; transform: translateX(-50%); bottom: 10px; position: absolute; }
+
+  .photo-btn { width: 100%; padding: 16px; justify-content: center; }
+
+  .contact { margin: 0 auto; }
+  .contact-card { padding: 16px; }
+
+  footer .icons a { font-size: 24px; }
+}
+
+@media (max-width: 380px) {
+  .hero h1 { font-size: 30px; }
+  .icons a { font-size: 22px; }
+}
+
+@media (max-width: 768px) {
+  .navdiv { 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    padding: 8px 0;
+  }
+  .navbar ul, .navbar li, .navdiv ul, .navdiv li { 
+    display: none !important;  
+  }
+  .logo a { margin-left: 0; font-size: 18px; }
+  .resume-btn { margin: 6px 0 0 0; width: auto; padding: 8px 14px; }
+}
+
+@media (max-width: 640px) {
+  body { height: auto; }
+  img, video { max-width: 100%; height: auto; display: block; }
+
+  .hero, .about, .education, .skills, .projects, .contact, footer { 
+    text-align: center; 
+  }
+
+  .hero { 
+    min-height: calc(100dvh - 96px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px 16px 72px;
+    margin-bottom: 56px;
+  }
+
+  .location { margin: 24px auto 0; justify-content: center; }
+  .hero h1 { font-size: 36px; margin-top: 8px; }
+  .hero p { width: auto; margin: 10px auto 0; font-size: 16px; }
+  .icons, .scroll-down { text-align: center; }
+  .icons a { font-size: 24px; margin-right: 12px; }
+  .scroll-down { margin-top: 48px; }
+
+  .about, .education, .skills, .projects, .contact { 
+    max-width: 680px; 
+    padding: 32px 16px; 
+    margin: 40px auto; 
+  }
+
+  .timeline { margin: 0; padding: 0; }
+  .timeline::before, .tl-dot { display: none; }
+  .tl-card { margin: 0 auto 14px; padding: 14px; }
+  .tl-card h3 { font-size: 16px; }
+  .meta { font-size: 13px; }
+
+  .skills ul { 
+    margin: 0; padding: 0; 
+    display: flex; flex-wrap: wrap; 
+    justify-content: center; gap: 10px; 
+  }
+  .skills ul li { margin-right: 0; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card .meta { align-items: center; text-align: center; padding: 14px 14px 48px; }
+  .project-card .meta h3 { font-size: 18px; }
+  .project-icons { left: 50%; transform: translateX(-50%); bottom: 10px; position: absolute; }
+
+  .photo-btn { 
+  width: auto; 
+  display: block; 
+  padding: 12px 24px; 
+  margin: 16px auto 0; 
+  text-align: center; 
+}
+
+  .contact { margin: 0 auto; }
+  .contact-card { padding: 16px; }
+
+  footer .icons a { font-size: 24px; }
+}
+
+@media (max-width: 380px) {
+  .hero h1 { font-size: 30px; }
+  .icons a { font-size: 22px; }
+}
+
