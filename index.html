@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Stylesheets (cache-busted) -->
+  <link rel="stylesheet" href="styles/styles.css?v=sticky1" />
+
+  <!-- FONT - Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <title>Keeret Mahi</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/title-images/title-image-32.png?v=1" />
+</head>
+<body>
+  <!-- STARS -->
+  <div class="stars" aria-hidden="true"></div>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-branding">
+          <img src="images/title-images/title-image.png" height="24" width="24" />
+          <a href="#">Keeret Mahi</a>
+        </div>
+
+        <ul class="nav-menu" id="primary-navigation">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item resume-btn download-resume"><a href="#" class="nav-link ">Resume</a></li>
+        </ul>
+
+        <div class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation" role="button" tabindex="0">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="location">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        <h4>Toronto, Canada</h4>
+      </div>
+
+      <h1 id="hero-title"></h1>
+      <p>Aspiring software engineer currently pursuing a B.CS at the University of Waterloo, and BBA at Wilfrid Laurier University. </p>
+
+      <div class="buttons">
+        <button class="experience-btn" id="projects-btn"><a href="#projects">View Projects</a></button>
+        <button class="resume-btn2 download-resume"><i class="fa-solid fa-download"></i> Resume</button>
+      </div>
+
+      <div class="icons">
+        <a href="https://linkedin.com/in/keeret-mahi" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Keeret-Mahi" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:keeretmahi@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+
+      <div class="scroll-down"><i class="fa-solid fa-long-arrow-down"></i></div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About</h2>
+      <p>Hello! I'm Keeret, an aspiring software developer currenty pursuing a Bachelor's of Computer Science at the University of Waterloo, and Bachelor's of Business Administration at Wilfrid Laurier University. I have a strong passion in Mathematics, and am eager to build a career in software engineering.  <br><br> In my free time, I love exploring astronomy, collecting vinyl records, and building side projects. This portfolio is a space where I share my work, experience, interests, and things I have created along the way! Feel free to explore, and don't hesitate to reach out to me!</p>
+    </section>
+
+    <section class="education" id="education">
+      <h2>Education</h2>
+      <div class="timeline"></div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skill-items">
+        <ul>
+          <li>Python</li><li>C</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Flask</li><li>Racket</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid"></div>
+    </section>
+
+    <button class="photo-btn" id="gallery-btn">View Photo Gallery</button>
+
+    <footer>
+      <div class="icons">
+        <a href="https://linkedin.com/in/keeret-mahi" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:keeretmahi@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+      <h3>2025 @ Keeret Mahi</h3>
+    </footer>
+  </main>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/effects.js"></script>
+  <script src="scripts/buttons.js"></script>
+  <script src="scripts/projects.js"></script>
+  <script src="scripts/education.js"></script>
+</body>
+</html>
