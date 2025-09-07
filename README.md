@@ -8,7 +8,7 @@ Live at 👉 [keeretmahi.com](https://keeretmahi.com)
 ## ✨ Features  
 - 📂 **Projects Showcase** – Dynamic cards highlighting software, design, and case study projects  
 - 📸 **Gallery Section** – Curated photo gallery of highlights from my life
-- - 📱 **Responsive Design** – Works across all screen sizes including desktops, tablets, and phones
+- 📱 **Responsive Design** – Works across all screen sizes including desktops, tablets, and phones
 - 🌐 **Custom Domain** – Hosted with GitHub Pages at *keeretmahi.com*  
 
 ---
