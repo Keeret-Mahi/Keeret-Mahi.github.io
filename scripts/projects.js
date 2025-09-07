@@ -1,44 +1,43 @@
-/* Projects */
 const projects = [
   {
     title: "Outline → Calendar",
-    cardHref: "#",
+    cardHref: "https://github.com/Keeret-Mahi/outline-to-calendar.git",
     image: "images/project-images/outline-calendar.png",
     alt: "Screenshot of a minimalist portfolio website",
     tech: ["Python", "Flask", "HTML/CSS/JS", "BeautifulSoup4", "ics"],
     desc: "A parsing tool that turns a university outline into a downloadable ics calendar.",
     links: {
       github: "https://github.com/Keeret-Mahi/outline-to-calendar.git",
-      live: "https://github.com/Keeret-Mahi"
+      live: "https://github.com/Keeret-Mahi/outline-to-calendar.git"
     }
   },
   {
     title: "Portfolio Website",
-    cardHref: "#",
+    cardHref: "https://keeretmahi.com/",
     image: "images/project-images/portfolio-website.png",
     alt: "Clean product photo representing an e-commerce platform",
     tech: ["HTML/CSS/JS"],
     desc: "This website was built by myself to showcase my projects and experiences.",
     links: {
-      github: "https://github.com/Keeret-Mahi",
-      live: "https://github.com/Keeret-Mahi"
+      github: "https://github.com/Keeret-Mahi/portfolio_website",
+      live: "https://keeretmahi.com/"
     }
   },
   {
-    title: "Coming Soon",
-    cardHref: "#",
-    image: "images/project-images/black.png",
+    title: "CNC Plotter",
+    cardHref: "https://drive.google.com/drive/folders/1I15Gux1Ot9rHckpjqKiFyHnfNVRrDP3M?usp=drive_link",
+    image: "images/project-images/cncplotter.png",
     alt: "Charts and graphs representing a data analysis project",
-    tech: ["TBA"],
-    desc: "Details to be announced soon...",
+    tech: ["Arduino", "GRBL", "Soldering"],
+    desc: "A CNC plotter capable of precisely drawing SVG files, turning digital designs into accurate pen-drawn sketches.",
     links: {
       github: "https://github.com/Keeret-Mahi",
-      live: "https://github.com/Keeret-Mahi"
+      live: "https://drive.google.com/drive/folders/1I15Gux1Ot9rHckpjqKiFyHnfNVRrDP3M?usp=drive_link"
     }
   }
 ];
 
-// 2) Helpers (no inner functions)
+// Helpers 
 function techListHTML(techArr) {
   return techArr.map(t => `<li>${t}</li>`).join("");
 }
@@ -65,7 +64,7 @@ function projectCardHTML(p) {
   </article>`;
 }
 
-// 3) Render
+// Render
 function renderProjects() {
   const grid = document.querySelector(".projects-grid");
   if (!grid) return;
